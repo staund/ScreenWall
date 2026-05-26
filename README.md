@@ -8,8 +8,8 @@
 * "Service Terminator;" Forcefully stops and disables background user-behavior tracking services ('DiagTrack').
 
   ## How to start?.
-  * Download this project as a 'ZIP file' from GitHub and extract(unzip) it to your Desktop.
-  * Open the extracted folder, right-click on "Run_ScreenWall.bat" and select "Run as Administrator
+* Download this project as a 'ZIP file' from GitHub and extract(unzip) it to your Desktop.
+* Open the extracted folder, right-click on "Run_ScreenWall.bat" and select "Run as Administrator
   That's it. The launcher will automatically handle the system paths, bypass the restriction policies safely, and activate your ScreenWall shield.
 
   ## How to verify it works?.
