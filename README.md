@@ -17,4 +17,5 @@ To verify that ScreenWall worked succsessfully, open PowerShell, paste this sing
 
 Get-Service DiagTrack | Select-Object Name, Status; (Get-ItemProperty "HKCU:\Software\Policies|Microsoft\Windows\WindowsAI").DisableAIDataAnalysis; (Get-ItemProperty "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection").AllowTelemetry
 
-```developed by staund
+#Author
+developed by staund.
