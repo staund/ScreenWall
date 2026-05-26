@@ -28,6 +28,6 @@ Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection
 3.*Check Telemetry Service & Startup Status:
 Get-Service DiagTrack | Select-Object Name, Status, StartType
 
-Expected Results: 'Status' Should be "Stopped" 'StartType' must "Disable"
+>Expected Results: 'Status' Should be "Stopped" 'StartType' must "Disable"
 
 //developed by staund.\\\
