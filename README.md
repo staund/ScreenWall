@@ -14,16 +14,20 @@ A lightweight, minimal PowerShell  anti-tracking script designed to enhance loca
 
   #How to verify it works?
 To verify that ScreenWall worked succsessfully, open PowerShell(Administrator) and run these commands one by one:
+
 1.*Check AI Data Analysis Status:
   Get-ItemProperty -Path "HKCU:\Software\Policies\Microsoft\Windows\WindowsAI" -Name "DisableAIDataAnalysis" -ErrorAction SilentlyContinue
-Expected Results:Expected Results: 'DisableAIDataAnalysis' value must be 1(Blocked)
+  
+>Expected Results:Expected Results: 'DisableAIDataAnalysis' value must be 1(Blocked)
 
 2.*Check System Telemetry Status:
 Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection" -Name "AllowTelemetry" -ErrorAction SilentlyContinue
-Expected Results:'AllowTelemetry' value must return 0(Disabled)
+
+>Expected Results:'AllowTelemetry' value must return 0(Disabled)
 
 3.*Check Telemetry Service & Startup Status:
 Get-Service DiagTrack | Select-Object Name, Status, StartType
+
 Expected Results: 'Status' Should be "Stopped" 'StartType' must "Disable"
 
 //developed by staund.\\\
